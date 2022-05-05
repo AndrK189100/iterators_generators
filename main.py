@@ -1,7 +1,8 @@
 from data import nested_list as nsl
-from MyIterator import MyIterator
+from myIterator import MyIterator
+from decorators import decorator_maker
 
-
+@decorator_maker('result.txt')
 def my_generator(nested_list: list):
     def field_lst(nested_list: list):
         new_lst = []
